@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Healthcare ABAC System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #007bff;
+        }
+
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+
+            thead {
+                display: none;
+            }
+
+            tr {
+                display: block;
+                margin-bottom: 10px;
+                border-bottom: 2px solid #007bff;
+            }
+
+            td {
+                display: block;
+                text-align: right;
+                font-size: 14px;
+                border-bottom: 1px solid #ddd;
+            }
+
+            td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>IoT Healthcare ABAC Data</h1>
+
+    <h2>Nurses</h2>
+    <div class="table-container">
+        <!-- Table for Nurses -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Nurse ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Access Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Nurse ID">nurse1</td>
+                    <td data-label="Name">Nurse Clara Adams</td>
+                    <td data-label="Department">ICU</td>
+                    <td data-label="Access Level">Medium</td>
+                </tr>
+                <tr>
+                    <td data-label="Nurse ID">nurse2</td>
+                    <td data-label="Name">Nurse John Lee</td>
+                    <td data-label="Department">General Ward</td>
+                    <td data-label="Access Level">Medium</td>
+                </tr>
+                <tr>
+                    <td data-label="Nurse ID">nurse3</td>
+                    <td data-label="Name">Nurse Olivia Green</td>
+                    <td data-label="Department">Surgery</td>
+                    <td data-label="Access Level">Medium</td>
+                </tr>
+                <tr>
+                    <td data-label="Nurse ID">nurse4</td>
+                    <td data-label="Name">Nurse Ethan Carter</td>
+                    <td data-label="Department">Pediatrics</td>
+                    <td data-label="Access Level">Medium</td>
+                </tr>
+                <tr>
+                    <td data-label="Nurse ID">nurse5</td>
+                    <td data-label="Name">Nurse Emma White</td>
+                    <td data-label="Department">Emergency</td>
+                    <td data-label="Access Level">Medium</td>
+                </tr>
+                <tr>
+                    <td data-label="Nurse ID">nurse6</td>
+                    <td data-label="Name">Nurse Lucas Scott</td>
+                    <td data-label="Department">Cardiology</td>
+                    <td data-label="Access Level">Medium</td>
+                </tr>
+                <tr>
+                    <td data-label="Nurse ID">nurse7</td>
+                    <td data-label="Name">Nurse Mia Edwards</td>
+                    <td data-label="Department">Neurology</td>
+                    <td data-label="Access Level">Medium</td>
+                </tr>
+                <tr>
+                    <td data-label="Nurse ID">nurse8</td>
+                    <td data-label="Name">Nurse Jack Harris</td>
+                    <td data-label="Department">Oncology</td>
+                    <td data-label="Access Level">Medium</td>
+                </tr>
+                <tr>
+                    <td data-label="Nurse ID">nurse9</td>
+                    <td data-label="Name">Nurse Sophia Martinez</td>
+                    <td data-label="Department">Orthopedics</td>
+                    <td data-label="Access Level">Medium</td>
+                </tr>
+                <tr>
+                    <td data-label="Nurse ID">nurse10</td>
+                    <td data-label="Name">Nurse William Clark</td>
+                    <td data-label="Department">Dermatology</td>
+                    <td data-label="Access Level">Medium</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+</body>
+</html>

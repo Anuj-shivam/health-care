@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Healthcare ABAC System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #007bff;
+        }
+
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+
+            thead {
+                display: none;
+            }
+
+            tr {
+                display: block;
+                margin-bottom: 10px;
+                border-bottom: 2px solid #007bff;
+            }
+
+            td {
+                display: block;
+                text-align: right;
+                font-size: 14px;
+                border-bottom: 1px solid #ddd;
+            }
+
+            td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>IoT Healthcare ABAC Data</h1>
+
+    <h2>Doctors</h2>
+    <div class="table-container">
+        <!-- Table for Doctors -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Doctor ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Specialization</th>
+                    <th>Access Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Doctor ID">doctor1</td>
+                    <td data-label="Name">Dr. Alice Johnson</td>
+                    <td data-label="Department">Cardiology</td>
+                    <td data-label="Specialization">Heart</td>
+                    <td data-label="Access Level">High</td>
+                </tr>
+                <tr>
+                    <td data-label="Doctor ID">doctor2</td>
+                    <td data-label="Name">Dr. Robert Smith</td>
+                    <td data-label="Department">Neurology</td>
+                    <td data-label="Specialization">Brain</td>
+                    <td data-label="Access Level">High</td>
+                </tr>
+                <tr>
+                    <td data-label="Doctor ID">doctor3</td>
+                    <td data-label="Name">Dr. Jane Williams</td>
+                    <td data-label="Department">Orthopedics</td>
+                    <td data-label="Specialization">Bones</td>
+                    <td data-label="Access Level">High</td>
+                </tr>
+                <tr>
+                    <td data-label="Doctor ID">doctor4</td>
+                    <td data-label="Name">Dr. Michael Brown</td>
+                    <td data-label="Department">Oncology</td>
+                    <td data-label="Specialization">Cancer</td>
+                    <td data-label="Access Level">High</td>
+                </tr>
+                <tr>
+                    <td data-label="Doctor ID">doctor5</td>
+                    <td data-label="Name">Dr. Sarah Davis</td>
+                    <td data-label="Department">Pediatrics</td>
+                    <td data-label="Specialization">Children</td>
+                    <td data-label="Access Level">High</td>
+                </tr>
+                <tr>
+                    <td data-label="Doctor ID">doctor6</td>
+                    <td data-label="Name">Dr. John Miller</td>
+                    <td data-label="Department">Dermatology</td>
+                    <td data-label="Specialization">Skin</td>
+                    <td data-label="Access Level">High</td>
+                </tr>
+                <tr>
+                    <td data-label="Doctor ID">doctor7</td>
+                    <td data-label="Name">Dr. Susan Wilson</td>
+                    <td data-label="Department">Gastroenterology</td>
+                    <td data-label="Specialization">Stomach</td>
+                    <td data-label="Access Level">High</td>
+                </tr>
+                <tr>
+                    <td data-label="Doctor ID">doctor8</td>
+                    <td data-label="Name">Dr. David Moore</td>
+                    <td data-label="Department">Endocrinology</td>
+                    <td data-label="Specialization">Diabetes</td>
+                    <td data-label="Access Level">High</td>
+                </tr>
+                <tr>
+                    <td data-label="Doctor ID">doctor9</td>
+                    <td data-label="Name">Dr. Linda Taylor</td>
+                    <td data-label="Department">Ophthalmology</td>
+                    <td data-label="Specialization">Eyes</td>
+                    <td data-label="Access Level">High</td>
+                </tr>
+                <tr>
+                    <td data-label="Doctor ID">doctor10</td>
+                    <td data-label="Name">Dr. Mark Anderson</td>
+                    <td data-label="Department">Psychiatry</td>
+                    <td data-label="Specialization">Mental Health</td>
+                    <td data-label="Access Level">High</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+</body>
+</html>

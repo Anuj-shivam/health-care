@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9a9595; /* Match the purple background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #9a9595;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .login-container h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .login-container input[type="email"],
+        .login-container input[type="password"],
+        .login-container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #FFD700; /* Yellow button */
+            color: black;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #e1c200;
+        }
+        .captcha {
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .captcha img {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .login-container .links {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .login-container .links a {
+            color: yellow;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        .login-container .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login Here</h2>
+        <form>
+            <input type="email" placeholder="Enter Email" required>
+            <input type="password" placeholder="Enter Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div class="links">
+            <button onclick="window.location.href='administrative.html';">Administrative Login</button>
+            <button>Patient Login</button>
+            <a href="Registration.html">New Registration</a>
+            <a href="#">Forgot Password?</a>
+        </div>
+    </div>
+</body>
+</html>

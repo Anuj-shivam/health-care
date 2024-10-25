@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Appointment</title>
+
+<style>
+/* Basic reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0cb8b6;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 14px 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.navbar select {
+  font-size: 18px;
+  padding: 10px;
+  background-color: #0cb8b6;
+  color: white;
+  border: none;
+}
+
+.navbar a:hover, .navbar select:hover {
+  background-color: #097c7a;
+}
+table {
+  width: 100%;
+}
+
+/* Form styling */
+form {
+  width: 50%;
+  margin: 0 auto; /* Centering the form */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%; /* Full width for better appearance */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+input[type="submit"] {
+  background-color: #0cb8b6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+footer {
+  background-color: #0cb8b6;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+</style>
+
+</head>
+<body>
+
+<table>
+
+<tr>
+<td colspan="2"><img src="images/logo.png" alt="Logo"></td>
+<td colspan="2">
+<p><b>Monday - Friday 08:00-19:00</b></p>
+</td>
+
+</tr>
+
+<tr class="navbar">
+  <td style="padding: 10px;"><a href="index.html">Home</a></td>
+  <td>
+    <select id="role" name="role" onchange="navigate()">
+      <option value="people.html">People</option>
+      <option value="doctor">Doctor</option>
+      <option value="nurse">Nurse</option>
+      <option value="patient">Patient</option>
+    </select>
+  </td>
+  <td style="padding: 10px;"><a href="appointment.html">Appointment</a></td>
+  <td style="padding: 10px;"><a href="contact.html">Contact</a></td>
+</tr>
+
+<tr>
+<td colspan="8" style="padding:5px 20px;">
+<p style="text-align: center;">Book a visit with your doctor</p>
+<h1 style="text-align: center;">MAKE AN APPOINTMENT NOW</h1>
+
+<!-- Form -->
+<form action="#" method="POST">
+  <label for="name">Your Name (required)</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+  <label for="email">Your Email (required)</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+  <label for="doctor">Select Your Doctor</label>
+  <select id="doctor" name="doctor">
+    <option>Select Doctor</option>
+    <option>Stephanie Wosniack</option>
+    <option>Hellen Lowe</option>
+    <option>Emily Washington</option>
+    <option>Sussie Wolff</option>
+  </select>
+
+  <label for="date">Appointment Date</label>
+  <input type="date" id="date" name="date" required>
+
+  <label for="message">Your Message</label>
+  <textarea id="message" name="message" rows="5" cols="40" placeholder="Your message here..."></textarea>
+
+  <input type="submit" value="Book Appointment">
+</form>
+
+</td>
+</tr>
+
+</table>
+
+<!-- Footer -->
+<footer>
+  <p>Copyright 2022. All Rights Reserved</p>
+</footer>
+
+</body>
+<script>
+  function navigate() {
+      const roleSelect = document.getElementById('role');
+      const selectedValue = roleSelect.value;
+      if (selectedValue) {
+          window.location.href = selectedValue;
+      }
+}
+</script>
+</html>

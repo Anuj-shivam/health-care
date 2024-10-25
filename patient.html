@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Healthcare ABAC System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #007bff;
+        }
+
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+
+            thead {
+                display: none;
+            }
+
+            tr {
+                display: block;
+                margin-bottom: 10px;
+                border-bottom: 2px solid #007bff;
+            }
+
+            td {
+                display: block;
+                text-align: right;
+                font-size: 14px;
+                border-bottom: 1px solid #ddd;
+            }
+
+            td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>IoT Healthcare ABAC Data</h1>
+    
+    <h2>Patients</h2>
+    <div class="table-container">
+        <!-- Table for Patients -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Patient ID</th>
+                    <th>Name</th>
+                    <th>Condition</th>
+                    <th>Assigned Doctor</th>
+                    <th>Access Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Patient ID">patient1</td>
+                    <td data-label="Name">Mark Davis</td>
+                    <td data-label="Condition">Heart Disease</td>
+                    <td data-label="Assigned Doctor">Dr. Alice Johnson</td>
+                    <td data-label="Access Level">Low</td>
+                </tr>
+                <tr>
+                    <td data-label="Patient ID">patient2</td>
+                    <td data-label="Name">Emily Thompson</td>
+                    <td data-label="Condition">Brain Tumor</td>
+                    <td data-label="Assigned Doctor">Dr. Robert Smith</td>
+                    <td data-label="Access Level">Low</td>
+                </tr>
+                <tr>
+                    <td data-label="Patient ID">patient3</td>
+                    <td data-label="Name">Sarah Wilson</td>
+                    <td data-label="Condition">Fractured Leg</td>
+                    <td data-label="Assigned Doctor">Dr. Jane Williams</td>
+                    <td data-label="Access Level">Low</td>
+                </tr>
+                <tr>
+                    <td data-label="Patient ID">patient4</td>
+                    <td data-label="Name">John Evans</td>
+                    <td data-label="Condition">Lung Cancer</td>
+                    <td data-label="Assigned Doctor">Dr. Michael Brown</td>
+                    <td data-label="Access Level">Low</td>
+                </tr>
+                <tr>
+                    <td data-label="Patient ID">patient5</td>
+                    <td data-label="Name">Ella Turner</td>
+                    <td data-label="Condition">Asthma</td>
+                    <td data-label="Assigned Doctor">Dr. Sarah Davis</td>
+                    <td data-label="Access Level">Low</td>
+                </tr>
+                <tr>
+                    <td data-label="Patient ID">patient6</td>
+                    <td data-label="Name">James Scott</td>
+                    <td data-label="Condition">Eczema</td>
+                    <td data-label="Assigned Doctor">Dr. John Miller</td>
+                    <td data-label="Access Level">Low</td>
+                </tr>
+                <tr>
+                    <td data-label="Patient ID">patient7</td>
+                    <td data-label="Name">Charlotte Morris</td>
+                    <td data-label="Condition">Stomach Ulcer</td>
+                    <td data-label="Assigned Doctor">Dr. Susan Wilson</td>
+                    <td data-label="Access Level">Low</td>
+                </tr>
+                <tr>
+                    <td data-label="Patient ID">patient8</td>
+                    <td data-label="Name">Liam Cooper</td>
+                    <td data-label="Condition">Diabetes</td>
+                    <td data-label="Assigned Doctor">Dr. David Moore</td>
+                    <td data-label="Access Level">Low</td>
+                </tr>
+                <tr>
+                    <td data-label="Patient ID">patient9</td>
+                    <td data-label="Name">Grace Walker</td>
+                    <td data-label="Condition">Glaucoma</td>
+                    <td data-label="Assigned Doctor">Dr. Linda Taylor</td>
+                    <td data-label="Access Level">Low</td>
+                </tr>
+                <tr>
+                    <td data-label="Patient ID">patient10</td>
+                    <td data-label="Name">Ethan Campbell</td>
+                    <td data-label="Condition">Depression</td>
+                    <td data-label="Assigned Doctor">Dr. Mark Anderson</td>
+                    <td data-label="Access Level">Low</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
